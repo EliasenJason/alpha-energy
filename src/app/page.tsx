@@ -24,19 +24,19 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                title: 'Remote Engineering Oversight for Hydraulic Fracturing',
-                description: 'Our remote engineering team provides comprehensive oversight for hydraulic fracturing operations. With real-time monitoring and detailed analysis, we ensure optimal performance, safety, and efficiency in every phase of the operation.',
-                icon: '🛢️',
+                title: "Remote Engineering Oversight for Hydraulic Fracturing",
+                description: "Our remote engineering team provides comprehensive oversight for hydraulic fracturing operations. With real-time monitoring and detailed analysis, we ensure optimal performance, safety, and efficiency in every phase of the operation.",
+                icon: "🛢️",
               },
               {
-                title: 'Stimulation Program Design and Post-Job Data Analysis',
-                description: 'Our team crafts precise stimulation programs tailored to the unique characteristics of each well, optimizing performance from the start. After job completion, we provide in-depth data analysis.',
-                icon: '🧪',
+                title: "Stimulation Program Design and Post-Job Data Analysis",
+                description: "Our team crafts precise stimulation programs tailored to the unique characteristics of each well, optimizing performance from the start. After job completion, we provide in-depth data analysis.",
+                icon: "🧪",
               },
               {
-                title: 'Customized Chemical Systems',
-                description: 'We design and supply unique chemical solutions tailored to meet the specific demands of your hydraulic fracturing projects. By developing custom formulations, we help enhance fluid performance.',
-                icon: '📊',
+                title: "Customized Chemical Systems",
+                description: "We design and supply unique chemical solutions tailored to meet the specific demands of your hydraulic fracturing projects. By developing custom formulations, we help enhance fluid performance.",
+                icon: "📊",
               },
             ].map((service, index) => (
               <div
