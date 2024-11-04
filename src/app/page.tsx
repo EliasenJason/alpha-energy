@@ -1,14 +1,25 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-gray-900">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900 text-white">
-        <div className="container mx-auto px-4 py-24">
+      <section className="relative bg-cover bg-center bg-no-repeat h-screen" style={{backgroundImage: "url('/images/pump-jack.jpg')"}}>
+        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div className="relative container mx-auto px-4 h-full flex items-center">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-teal-400">
-              Alpha Energy
-            </h1>
-            <p className="text-xl mb-8 text-gray-300">Powering Tomorrow's Solutions Today</p>
+            {/* Add the logo image */}
+            <div className="mb-6">
+            <Image
+              src="/images/alpha-energy-technologies.webp"
+              alt="Alpha Energy Logo"
+              width={500}
+              height={200}
+              className="mx-auto brightness-150 drop-shadow-[0_0_0.3rem_#000000]"
+              priority
+            />
+            </div>
+            <p className="text-xl mb-8 text-white">Powering Tomorrow's Solutions Today</p>
             <button className="bg-blue-500 text-white px-8 py-3 rounded-lg font-semibold 
               hover:bg-blue-600 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-blue-500/50">
               Get Started
@@ -119,7 +130,15 @@ export default function Home() {
       <footer className="bg-gray-950 text-gray-400 py-8">
         <div className="container mx-auto px-4">
           <div className="text-center">
-            <h3 className="text-2xl font-bold mb-4 text-white">Alpha Energy</h3>
+            <div className="mb-4">
+              <Image
+                src="/images/alpha-energy-technologies.webp"
+                alt="Alpha Energy Logo"
+                width={200}
+                height={67}
+                className="mx-auto"
+              />
+            </div>
             <p className="mb-4">© 2024 Alpha Energy. All rights reserved.</p>
             <div className="flex justify-center space-x-6">
               <a href="#" className="hover:text-blue-400 transition-colors duration-300">LinkedIn</a>
